@@ -1,13 +1,13 @@
-﻿namespace OddEven
+﻿namespace PNZ
 {
-    public  class Program
+    public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            int number = 42;
-            OddEven oddeven = new OddEven();
-            oddeven.ReadNumber(number);
-     
+            Console.WriteLine("Enter a number:");
+            int num = Convert.ToInt32(Console.ReadLine());
+            pnz n = new pnz(num);
+            n.check();
         }
     }
 }
