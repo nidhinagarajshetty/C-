@@ -1,13 +1,18 @@
-﻿namespace PNZ
+﻿namespace Person
 {
     public class Program
     {
-        static void Main(string[] args)
+        public static void Person()
         {
-            Console.WriteLine("Enter a number:");
-            int num = Convert.ToInt32(Console.ReadLine());
-            pnz n = new pnz(num);
-            n.check();
+            
+            Person p1 = new Person();
+            p1.ReadData();
+            p1.DisplayData();
+        }
+       public static void Main(string[] args)
+        {
+            Person(); 
         }
     }
 }
+
