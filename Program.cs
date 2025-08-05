@@ -1,18 +1,20 @@
-﻿
-using Reversenum;
-
-class Program
+﻿namespace Sum
 {
-    static void Reversenum()
+    public class Program
     {
-        ReverseNum obj = new ReverseNum(); 
-        obj.ReadData();
-        obj.Reverse();
-        obj.Display();
-    }
+        public static void Main(string[] args)
+        {
+            static void sum()
+            {
+                Sum obj = new Sum();      
+                obj.ReadNumber();         
+                obj.CalculateSum();       
+                obj.Display();            
+            }
 
-    static void Main(string[] args)
-    {
-        Reversenum();  
+                sum(); 
+            }
+        }
     }
-}
+    
+
