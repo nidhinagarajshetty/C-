@@ -1,20 +1,15 @@
-﻿namespace Sum
+﻿namespace SquareOfNumber
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            static void sum()
-            {
-                Sum obj = new Sum();      
-                obj.ReadNumber();         
-                obj.CalculateSum();       
-                obj.Display();            
-            }
+            Square square = new Square();
+                square.CalculateSquare();
+            square.display();
 
-                sum(); 
-            }
+                
+            
         }
     }
-    
-
+}
