@@ -1,15 +1,11 @@
-﻿namespace SquareOfNumber
+﻿namespace Constructor
 {
-    public class Program
+    internal class Program
     {
         public static void Main(string[] args)
         {
-            Square square = new Square();
-                square.CalculateSquare();
-            square.display();
-
-                
-            
+            Def1 d = new Def1("John", 30);
+            d.DisplayInfo();
         }
     }
 }
