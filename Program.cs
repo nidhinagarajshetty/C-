@@ -1,11 +1,17 @@
-﻿namespace Constructor
+﻿namespace BankAccount
 {
     internal class Program
     {
         public static void Main(string[] args)
         {
-            Def1 d = new Def1("John", 30);
-            d.DisplayInfo();
+            Account acc= new Account();
+            acc.Deposit(1000);
+            acc.ShowBalance();
+
+            acc.withdraw(2000); 
+            acc.ShowBalance();
+
+            acc.withdraw(500);
         }
     }
 }
